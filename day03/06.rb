@@ -379,9 +379,4 @@ while n < 323
   m += 1
 end
 
-
-
-
 p tree1.length * tree2.length * tree3.length * tree4.length * tree5.length
-# p arr[0]
-# p arr[0+1][0+3]

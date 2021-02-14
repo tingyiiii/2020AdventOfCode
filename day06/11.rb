@@ -2284,27 +2284,3 @@ jtiunkpsroa".split("\n"+"\n")
 team = arr.map {|item| item.gsub(/\n/, '') }
 
 p team.map {|i| i.split('').uniq.length }.sum
-
-
-# test = "abc
-
-# a
-# b
-# c
-
-# ab
-# ac
-
-# a
-# a
-# a
-# a
-
-# b".split("\n"+"\n")
-# p test
-# team = test.map {|item| item.gsub(/\n/, '') }
-# p team
-# team = team.select{ |i| i.class != NilClass }
-# p team.map {|i| i.split('').uniq.length }.sum
-
-# p "hlqbanmtjytdrvxcajgnfpokejtiunkpsroa".split('')

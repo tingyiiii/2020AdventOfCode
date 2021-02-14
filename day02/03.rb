@@ -1014,8 +1014,3 @@ valid = []
   valid << 1 if (source.count(target) <= most && source.count(target) >= min)
 end
 p valid.length
-# p min = arr1[1].slice(/\d+-/).slice(/\d+/).to_i
-# p most = arr1[1].slice(/-\d+/).slice(/\d+/).to_i
-# p source = arr3[1]
-# p target = arr2[1].slice(/[a-z]/)
-# p source.count(target) <= most && source.count(target) >= min

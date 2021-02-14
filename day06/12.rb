@@ -2282,18 +2282,6 @@ hlqbanmtjy
 tdrvxcajgnfpoke
 jtiunkpsroa".split("\n"+"\n")
 
-# team = arr.map {|s| s.split("\n")}
-# p team
-
-
-# map do |arr|
-#   i = 0
-#   while i < arr.length do
-    
-#     i += 1
-#   end
-# end
-
 test = "abc
 
 a
@@ -2323,39 +2311,4 @@ while group < arr.length
   group += 1
 end
 p answer.sum
-# test = test.map {|s| s.split("\n")}
-# group = 0
-# answer = []
-# while group < test.length do
-#   i = 0
-#   while i < test[group].length do
-#     m = 0
-#     while m < test[group][i].length do
-#       answer << test[group] if test[group][i].count(test[group][i][m]) == test_member[group]
-#       m += 1
-#     end
-#     i += 1
-#   end
-#   group += 1
-# end
-# p test[2][0].count(test[2][0][0])
-# test = test.map {|arr| arr.map{|str| str.scan(/./)}}
-# test_answer = []
-# def loop
-#   map do |arr|
-#     member = 0
-#     while member < arr.length do
-#       if arr.length = 1
-#         test_answer << arr.length
-#       else
-#         order = 0
-#         while order < arr[member][0].length do
-#           test_answer << 1 if arr[order+1].include?(arr[0][order])
-#           order += 1
-#         end
-#         member += 1
-#       end
-#     end
-#   end
-# end
 

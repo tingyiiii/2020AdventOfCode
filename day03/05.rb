@@ -336,5 +336,3 @@ while row < 323
   col += 3
 end
 p tree.length
-# p arr[0]
-# p arr[0+1][0+3]

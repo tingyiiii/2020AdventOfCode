@@ -1015,8 +1015,3 @@ valid = []
   valid << 1 if validate
 end
 p valid.length
-# p position1 = arr1[997].slice(/\d+-/).slice(/\d+/).to_i - 1
-# p position2 = arr1[997].slice(/-\d+/).slice(/\d+/).to_i - 1
-# p source = arr3[997]
-# p target = arr2[997].slice(/[a-z]/)
-# p source[position1] == target && source[position2] != target || source[position1] != target && source[position2] == target

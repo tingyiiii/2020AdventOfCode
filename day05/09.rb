@@ -991,36 +991,6 @@ def seat_column(item)
 end
 
 test = ["BFFFBBFRRR","FFFBBBFRRR"]
-# memeber = 0
-# order = 0
-# f = 0
-# b = 127
-# while memeber < test.length do
-#   while order < 7 do
-#     case test[memeber][order]
-#     when "F"
-#       b = (f + b) / 2
-#     else
-#       f = ((f + 1) + b) / 2
-#     end
-#     order += 1
-#   end
-#   memeber += 1
-# end
-
-# case test[0][0]
-# when "F"
-#   b = (f + b) / 2
-# else
-#   f = ((f + 1) + b) / 2
-# end
-
-# case test[0][1]
-# when "F"
-#   b = (f + b) / 2
-# else
-#   f = ((f + 1) + b) / 2
-# end
 answer_row = seat_row(arr)
 answer_column = seat_column(arr)
 row_8 = answer_row.map { |i| i * 8 }
