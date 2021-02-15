@@ -634,4 +634,3 @@ while questions.any?
 end
 
 p sum
-p questions
