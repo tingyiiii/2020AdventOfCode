@@ -623,10 +623,10 @@ while questions.any?
   question = questions.shift
   if children_bags.has_key?(question)
     if !children_bags[question].empty?
-      children_bags[question].each do |child|
-        sum += child[0]
-        child[0].times do 
-          questions << child[1]
+      children_bags[question].each do |child_count, child|
+        sum += child_count
+        child_count.times do 
+          questions << child
         end
       end
     end
