@@ -602,12 +602,29 @@ dark olive bags contain 3 faded blue bags, 4 dotted black bags.
 vibrant plum bags contain 5 faded blue bags, 6 dotted black bags.
 faded blue bags contain no other bags.
 dotted black bags contain no other bags.".split("\n")
-# contain = 'shiny gold'
-# p arr2 = test.select{|str| str.include?(contain)}
-test.each do |bag|
-  parent, contain = bag.match(/(\w+ \w+) bags contain (.*)\./)[1..2]
+
+parent_bag = Hash.new { |hash, key| hash[key] = Array.new }
+
+arr.each do |line|
+  parent, contain = line.match(/(\w+ \w+) bags contain (.*)\./)[1..2]
+
   children = contain.split(",")
-  children.map!{|child| child.match(/(\w+ \w+) bag/)[1]}
-  p parent
-  p children
+    .map! { |child| child.match(/(\w+ \w+) bag/)[1] }
+  children.each do |child|
+    parent_bag[child] << parent
+  end
 end
+
+bag_colors = Array.new
+question = ["shiny gold"]
+
+while question.any?
+  child = question.shift
+
+  parent_bag[child].each do |parent|
+    bag_colors << parent
+    question << parent
+  end
+end
+
+p bag_colors.uniq!.size
